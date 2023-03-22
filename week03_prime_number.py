@@ -1,19 +1,21 @@
-# week03_prime_number v0.6
-number = int(input("input number : "))
+# week03_prime_number v1.0
+numberstart = int(input("input number to start : "))
+numberend = int(input("input number to end : "))
 #count = 0
-is_prime = True
+for k in range(numberstart, numberend+1):
 
-if number < 2:
-    is_prime = False
-else:
-    for i in range(2, number): # -2 loop
-        if number % i == 0:
-            is_prime = False
-            break #If not prime number, exit the loop as soon as the firstdivisor is found
-        print(i, end=' ')
+    is_prime = True
 
-#if is_prime == True:
-if is_prime:
-    print(f"{number} is prime number!")
-else:
-    print(f"{number} is not prime number.")
+    if k < 2:
+        is_prime = False
+    else:
+        for i in range(2, k): # -2 loop
+            if k % i == 0:
+                is_prime = False
+                break #If not prime number, exit the loop as soon as the firstdivisor is found
+
+    #if is_prime == True:
+    if is_prime:
+        print(f"{k}", end=' ')
+    else:
+        continue
