@@ -2,9 +2,10 @@
 #numberstart = int(input("input number to start : "))
 #numberend = int(input("input number to end : "))
 #count = 0
-numbers = input("Enter starting number and ending number : ").split()
-numberstart = int(numbers[0])
-numberend = int(numbers[1])
+#numbers = input("Enter starting number and ending number : ").split()
+#numberstart = int(numbers[0])
+#numberend = int(numbers[1])
+numberstart, numberend = map(int, input("Enter starting number and ending number : ").split())
 for k in range(numberstart, numberend+1):
     is_prime = True
     if k < 2:
