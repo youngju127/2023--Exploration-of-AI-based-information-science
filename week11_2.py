@@ -1,8 +1,6 @@
 import numpy as np
 
-a = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-print(a[2, 0])
-b = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]])
-
-print(b)
-print(b[::2, ::2])
+matrix_a = np.array([[10, 20, 30],[10, 20, 30]])
+matrix_b = np.array([[2, 2, 2],[1, 2, 3]])
+print(matrix_a, matrix_b)
+print(matrix_a * matrix_b)
