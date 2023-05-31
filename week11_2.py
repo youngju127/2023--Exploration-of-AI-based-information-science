@@ -1,10 +1,8 @@
 import numpy as np
-d1 = np.array([90, 80, 70])
-d2 = np.array([[3, 2, 1], [7, 8, 9] ,[10, 11, 12]])
-print(d1, d2)
-print(d1.ndim, d2.ndim)
-print(d1.shape, d2.shape)
-print(d1.dtype, d2.dtype)
-print(d1.itemsize, d2.itemsize)
-print(d1.nbytes, d2.nbytes)
-print(d1.strides, d2.strides)
+
+a = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(a[2, 0])
+b = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]])
+
+print(b)
+print(b[::2, ::2])
