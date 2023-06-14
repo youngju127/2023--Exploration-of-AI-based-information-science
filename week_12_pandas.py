@@ -8,6 +8,11 @@ df1 = pd.DataFrame({
 df2 = pd.DataFrame(
     [[11, 9, 55],
      [-2, 0, 33],
-     [7, 77, 19]]
-)
-print(df1)
+     [7, 77, 19]],
+    index=[1,2,3],
+    columns=["a", "b", "c"])
+df3 = df1.melt().rename(columns={
+    'variable' : 'var',
+    'value' : 'val'
+}).query('val > 10')
+print(df3)
