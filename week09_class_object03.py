@@ -32,7 +32,7 @@ if __name__ =="__main__":
     squirtle = Squirtle("squirtle", 1, 44)
     charizard = Charizard("charrizard", 36, 78)
 
-    pikachu.attack()
+    pikachu.say()
     squirtle.attack_target(charizard.name)
     charizard.attack_target(squirtle.name)
 
